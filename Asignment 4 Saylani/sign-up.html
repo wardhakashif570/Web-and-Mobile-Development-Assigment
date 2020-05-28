@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="footer.css"> 
+    <link rel="stylesheet" href="website.css"> 
+    <style>
+        body{
+    background-color:orangered;
+}
+.dis{
+      padding-right: 30px;
+      text-align: left;
+      font-weight: bold;
+      color: whitesmoke;
+    }
+
+.inner{
+    width: 60%;
+    margin: 10% auto 10% auto;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+input{
+    border-radius: 6px 6px 6px 6px;
+    padding: 1% 5%;
+    margin: 2% auto;
+    width: 80%;
+    display: block;
+}
+
+input[type="radio"]{
+    width: 10%;
+    display: inline-block;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: rgba(225,0,0,1.6);
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+.inner{
+    text-align: center;
+    padding: 1%;
+}
+    </style>
+</head>
+<body>
+    <!-- Nav started -->
+    <!-- Navbar started -->
+    <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+        <a class="navbar-brand" href="#"><b style="color:orangered;font-size: 30px;">SAZ TRADERS</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active dis" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link dis" href="SignIn.html">Sign In</a>
+            <a class="nav-item nav-link dis" href="sign-up.html">Sign Up</a>
+            <!-- <a class="nav-item nav-link dis" href="cart.html">Cart</a> -->
+            <!-- <a class="nav-item nav-link dis" href="Product.html">Products</a> -->
+            <div class="drop-down">
+                <a class="nav-item nav-link dis" href="Product.html">Products</a>
+                <!-- <li class="menu-dropdown">MENU</li> -->
+                <ul class="menu-items">
+                    <li><a href="Product.html#Fridge">Fridge</a></li>
+                    <li><a href="./Product.html#RoomCooler">Room Cooler</a></li>
+                    <li><a href="./Product.html#AirConditioner">Air Conditioner</a></li>
+                    <li><a href="./Product.html#WashingMachine">Washing Machine</a></li>
+                    <li><a href="./Product.html#Fans">Fans</a></li>
+                    
+              </ul>
+            </div>
+
+            <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar Ended -->
+
+    <!-- sign up start -->
+    <form enctype="multipart/form-data" method="POST">
+        <div class="container  text-center">
+            <div class="inner">
+                <div class="title">
+                    <h2>Sign-up</h2>
+                    <div class="content">
+                        <div class=txt>
+                            <input type="text" name="fname" placeholder="Enter your first name">
+                        </div>
+                        <div class="txt">
+                            <input type="text" name="lname" placeholder="Enter your last name">
+                        </div>
+                        <span id="span"></span>
+                        <div class="txt">
+                            <input type="email" name="email" placeholder="Enter your email address">
+                        </div>
+                        <span id="span"></span>
+                        <div class="txt">
+                            <input type="password" name="pswd" placeholder="Enter your password">
+                        </div>
+                        <span id="span"></span>
+                        <div class="txt">
+                            <input type="password" name="cpassword" placeholder="Confirm password">
+                        </div>
+                        <span id="span"></span>
+                        <div class=radios>
+                            <h6 style="
+    display: inline-block;">Gender : </h6>
+                            <input type="radio" name="gender" value="male" id="male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" value="female" id="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <span id="span"></span>
+                        <div class="btnsub">
+                            <input type="submit" name="submit" value="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- sign up end -->
+
+
+
+    <!-- footer started -->
+
+    <footer>
+        <div class="row bg-dark">
+            <div class="col-md-6">
+                <p style="font-weight:bold" class="text-white">High Quality Products Available</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <a href="AboutUs.html" class="text-white" style="font-weight:bold">About Us</a> 
+                <span class="text-muted mx-2" >|</span> 
+                <a href="#" class="text-white" style="font-weight:bold">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+          
+             <!-- <div class="column text">
+                 <h3>Mitao Bhook</h3>
+                 <p>it's fOOdies' pledge to give back our society. Over the years we have made it our mission to spread the message of hope, bringing positivee change in the lives of people and providing better living standards. Our aim is to lift our community from hunger to Hope.</p>
+             </div> -->
+        </div>
+        </footer>
+    <!-- footer ended -->
+</body>
