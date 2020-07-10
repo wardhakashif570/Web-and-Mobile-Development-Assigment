@@ -1,0 +1,39 @@
+        
+        
+        
+.green-text2 {
+    color: rgb(0, 255, 0);
+}
+.blue-text {
+    color: #316DC3;
+}
+
+.introduction {
+    font-family: sans-serif;
+    padding: 80px 101px;
+}
+
+.introduction>h2 {
+    font-family: serif;
+    font-weight: 600;
+}
+
+.service>img {
+    width: 3vw;
+}
+
+.services {
+    padding: 70px 0;
+    align-items: center;
+    background-color: #316DC3;
+    color: white;
+    font-family: serif;
+}
+
+.service>h6 {
+    letter-spacing: -1px;
+}
+
+.service>p {
+    font-size: 3rem;
+}

@@ -1,0 +1,27 @@
+.section4 {
+    background-color: white;
+}
+
+.mission {
+    margin-bottom: 20px;
+}
+
+.mission>div {
+    padding: 20px 10px;
+    background-color: whitesmoke;
+}
+
+.mission-name,
+.missions>h3,
+.events>h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+
+}
+
+.events>div>marquee {
+    font-family: sans-serif;
+    overflow: hidden;
+    font-size: 15px;
+    max-height: 150px;
+}

@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.nav1 {
+    background-color: #316DC3;
+    width: 100vw;
+    text-align: center;
+}
+.social-sites{
+    display: inline-block;
+    margin: 0;
+}
+.social-sites > ul{
+    list-style: none;
+    padding: 0%;
+}
+.social-sites>ul>li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.headline{
+    display: inline-block;
+    margin: 0;
+}
+.headline>p{
+    color: white;
+    margin: 0;
+}
+.header-buttons{
+    display: inline-block;
+    
+}
+.header-buttons>button{
+    color: #427900;
+    background-color: white;
+}
+.fa{
+    color: white;
+}

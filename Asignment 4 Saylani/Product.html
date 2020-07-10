@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Product Grid</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="website.css"> 
+    
+  
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<style>
+   .dis{
+     padding-right: 30px;
+     text-align: left;
+     font-weight: bold;
+     color:whitesmoke;
+   }
+   
+    body{
+     background-image: url('background.jpg'); 
+   }
+</style>
+</head>
+<body>
+     <!-- Navbar started -->
+     <div class="LogoAndNavigator">
+     <ul class="navigator">
+        <!--navigator-->
+
+        <li onclick="window.document.getElementById('cart').style.display='block'">CART</li>
+        
+    </ul>
+     </div>
+     <br/>
+     <!-- <h1 onclick="window.document.getElementById('cart').style.display='block'">CART</h1> -->
+     <!-- <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+        <a class="navbar-brand" href="#"><b style="color:orangered;font-size: 30px;">SAZ TRADERS</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active dis" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link dis" href="SignIn.html">Sign In</a>
+            <a class="nav-item nav-link dis" href="sign-up.html">Sign Up</a>
+             <a class="nav-item nav-link dis" id="cart" href="cart.html">Cart</a>
+        
+            <a class="nav-item nav-link dis" href="Product.html">Products</a> -->
+
+            <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar Ended -->
+    
+    <div class="menu-container">
+    <h1 id="Fridge" class="menu">FRIDGE </h1>
+    <section class="product">
+
+      <div class="product-card">
+          <div class="product-image-div">
+              <img class="product-image" src="Images/Fridge/fridge1.jpg" class="abc" alt="Fridge1">
+          </div>
+          <div class="product-info">
+              <h2 class="product-info-name">abc</h2>
+              <h3 class="product-info-price">Rs:10000</h3>
+              <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+          </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image-div">
+            <img class="product-image" src="Images/Fridge/fridge3.jpg" alt="Fridge2">
+        </div>
+        <div class="product-info">
+            <h2 class="product-info-name">xyz</h2>
+            <h3 class="product-info-price">Rs:15000</h3>
+            <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+        </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image-div">
+          <img class="product-image" src="Images/Fridge/fridge2.jpg" alt="Fries">
+      </div>
+      <div class="product-info">
+          <h2 class="product-info-name">abc</h2>
+          <h3 class="product-info-price">Rs:20000</h3>
+          <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+      </div>
+  </div>
+  <div class="product-card">
+    <div class="product-image-div">
+        <img class="product-image" src="Images/Fridge/fridge1.jpg" alt="Fridge1">
+    </div>
+    <div class="product-info">
+        <h2 class="product-info-name">abc</h2>
+        <h3 class="product-info-price">Rs:10000</h3>
+        <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+    </div>
+</div>
+
+
+
+
+    </section>
+  <!-- RoomCooler Start -->
+
+  <h1 id="RoomCooler" class="menu">ROOM COOLER </h1>
+  <section class="product">
+
+    <div class="product-card">
+        <div class="product-image-div">
+            <img class="product-image" src="Images/Roomcooler/roomcooler1.jpg" alt="Fridge1">
+        </div>
+        <div class="product-info">
+            <h2 class="product-info-name">abc</h2>
+            <h3 class="product-info-price">Rs:10000</h3>
+            <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+        </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image-div">
+          <img class="product-image" src="Images/Roomcooler/roomcooler2.jpg" alt="Fridge2">
+      </div>
+      <div class="product-info">
+          <h2 class="product-info-name"abc></h2>
+          <h3 class="product-info-price">Rs:15000</h3>
+          <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+      </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image-div">
+        <img class="product-image" src="Images/Roomcooler/roomcooler3.jpg" alt="Fries">
+    </div>
+    <div class="product-info">
+        <h2 class="product-info-name">abc</h2>
+        <h3 class="product-info-price">Rs:20000</h3>
+        <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+    </div>
+</div>
+<div class="product-card">
+    <div class="product-image-div">
+        <img class="product-image" src="Images/Roomcooler/roomcooler1.jpg" alt="Fridge1">
+    </div>
+    <div class="product-info">
+        <h2 class="product-info-name">abc</h2>
+        <h3 class="product-info-price">Rs:10000</h3>
+        <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+    </div>
+</div>
+  </section>
+
+  <!-- Roomcooler End -->
+
+
+  <!--AIR CONDITIONER  -->
+
+  <h1 id="AirConditioner" class="menu">AIR CONDITIONER </h1>
+  <section class="product">
+
+    <div class="product-card">
+        <div class="product-image-div">
+            <img class="product-image" src="Images/AIR CONDITIONER/airconditioner1.jpg" alt="airconditioner1">
+        </div>
+        <div class="product-info">
+            <h2 class="product-info-name">abc</h2>
+            <h3 class="product-info-price">Rs:10000</h3>
+            <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+        </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image-div">
+          <img class="product-image" src="Images/AIR CONDITIONER/airconditioner2.jpg" alt="airconditioner2">
+      </div>
+      <div class="product-info">
+          <h2 class="product-info-name">abc</h2>
+          <h3 class="product-info-price">Rs:15000</h3>
+          <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+      </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image-div">
+        <img class="product-image" src="Images/AIR CONDITIONER/airconditioner3.jpg" alt="Fries">
+    </div>
+    <div class="product-info">
+        <h2 class="product-info-name">abc</h2>
+        <h3 class="product-info-price">Rs:20000</h3>
+        <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image-div">
+        <img class="product-image" src="Images/AIR CONDITIONER/airconditioner1.jpg" alt="airconditioner1">
+    </div>
+    <div class="product-info">
+        <h2 class="product-info-name">abc</h2>
+        <h3 class="product-info-price">Rs:10000</h3>
+        <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+    </div>
+</div>
+</section>
+  <!--AIR CONDITIONER END -->
+
+
+<!--WASHING MACHINE START  -->
+
+<h1 id="WashingMachine" class="menu">WASHING MACHINE </h1>
+  <section class="product">
+
+    <div class="product-card">
+        <div class="product-image-div">
+            <img class="product-image" src="Images/Washing Machine/Washingmachine1.jpg" alt="washingmachine1">
+        </div>
+        <div class="product-info">
+            <h2 class="product-info-name">abc</h2>
+            <h3 class="product-info-price">Rs:10000</h3>
+            <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+        </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image-div">
+          <img class="product-image" src="Images/Washing Machine/washingmachine2.jpg" alt="washingmachine2">
+      </div>
+      <div class="product-info">
+          <h2 class="product-info-name">abc</h2>
+          <h3 class="product-info-price">Rs:15000</h3>
+          <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+      </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image-div">
+        <img class="product-image" src="Images/Washing Machine/wasingmachine3.jpg" alt="washingmachine3">
+    </div>
+    <div class="product-info">
+        <h2 class="product-info-name">abc</h2>
+        <h3 class="product-info-price">Rs:20000</h3>
+        <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+    </div>
+</div>
+<div class="product-card">
+    <div class="product-image-div">
+        <img class="product-image" src="Images/Washing Machine/Washingmachine1.jpg" alt="washingmachine1">
+    </div>
+    <div class="product-info">
+        <h2 class="product-info-name">abc</h2>
+        <h3 class="product-info-price">Rs:10000</h3>
+        <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+    </div>
+</div>
+
+
+</section>
+<!--WASHING MACHINE END  -->
+
+
+
+<!-- Fans Start -->
+<h1 id="Fans" class="menu">FANS </h1>
+  <section class="product">
+
+    <div class="product-card">
+        <div class="product-image-div">
+            <img class="product-image" src="Images/Fans/fans1.jpg" alt="washingmachine1">
+        </div>
+        <div class="product-info">
+            <h2 class="product-info-name">abc</h2>
+            <h3 class="product-info-price">Rs:10000</h3>
+            <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+        </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image-div">
+          <img class="product-image" src="Images/Fans/fans2.jpg" alt="washingmachine2">
+      </div>
+      <div class="product-info">
+          <h2 class="product-info-name">abc</h2>
+          <h3 class="product-info-price">Rs:15000</h3>
+          <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+      </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image-div">
+        <img class="product-image" src="Images/Fans/fan3.jpg" alt="washingmachine3">
+    </div>
+    <div class="product-info">
+        <h2 class="product-info-name">abc</h2>
+        <h3 class="product-info-price">Rs:20000</h3>
+        <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image-div">
+        <img class="product-image" src="Images/Fans/fans1.jpg" alt="washingmachine1">
+    </div>
+    <div class="product-info">
+        <h2 class="product-info-name">abc</h2>
+        <h3 class="product-info-price">Rs:10000</h3>
+        <button onclick="addToCartClicked(event)" class="add-to-cart">Add to cart</button>
+
+    </div>
+</div>
+</section>
+
+<!-- Fans end -->
+
+
+
+<div id="cart" class="modal">
+
+    <span onclick="window.document.getElementById('cart').style.display='none'" class="exit_modal">
+        X
+    </span>
+    <form action="xyz.php" method="POST" class="modal_content" id="cart-form">
+        <div class="container">
+            <section class="container content-section">
+                <h2 class="section-header headings">CART</h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">Rs:</span>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            </section>
+        </div>
+    </form>
+</div>
+
+</div>
+<script src="product.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+

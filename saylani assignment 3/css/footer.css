@@ -1,0 +1,34 @@
+.image>img {
+    width: 100%;
+    height: auto;
+}
+
+.section5 {
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.fa-phone,
+.fa-globe,
+.fa-envelope {
+    color: #427900;
+    margin: auto 10px;
+}
+
+.contact {
+    font-size: 13px;
+}
+
+.footer-icons>i {
+    width: 40px;
+    height: 40px;
+    margin: auto 5px;
+    padding: 13px;
+    border-radius: 20px;
+}
+
+footer{
+    font-family: serif;
+    padding-top: 30px;
+}

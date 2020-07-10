@@ -1,0 +1,604 @@
+/* new fonts added */
+@font-face {
+    font-family:'PG_Roof' ;
+    src: url('PG_Roof Runners_active_bold-it.ttf');
+}
+/* new fonts added */
+@font-face{
+    font-family: 'PG_ROOF_Small';
+    src: url('PG_Roof Runners_active.ttf');
+}
+
+/* styling of body */
+body{
+    /* background-image: url(background.jpg); */
+    min-width: 1100px;
+    min-height: 700px;
+    width: 1350px;
+    max-width: 1350px;
+    
+    overflow: scroll;
+}
+
+/* styling of navigator */
+.navigator{
+    list-style: none;
+    float: right;
+    
+}
+
+/* styling navigator items */
+.navigator li {
+    font-family: 'PG_Roof';
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(250, 252, 252);
+    margin: 20px 30px;
+    font-size: 20px;
+    font-weight:bold;
+    text-shadow: 7px 7px 5px black;
+    cursor: pointer;
+}
+.navigator a{
+    text-decoration: none;
+    color: white;
+}
+
+/* when the items of navigator will be hovered they will become slightly transparent */
+.navigator li:hover{
+    opacity: 0.6;
+}
+
+/* styling logo image */
+#logo{
+    width: 120px;
+    height: 85px;
+    float: left;
+}
+
+/* styling slideshow */
+.mySlides{
+    
+    margin: 10px 450px 10px 450px;
+}
+
+/* styling images in slideshow */
+.image{
+    width: 350px;
+    height: 350px;
+    margin-left: 10px;
+}
+
+/* styling the item labels */
+.itemlabels{
+    font-family: 'PG_Roof';
+    color:rgb(250, 252, 252);
+    font-weight:bold;
+    font-size : 30px;
+    text-align: center;
+    min-width: 500px;
+    min-height: 30px;
+    text-shadow: 10px 10px 5px black;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* css for modals */
+.modal{
+    background-color: rgba(132, 114, 114, 0.5);
+    display: none;
+    z-index: 1;
+    padding-top: 10px; 
+    display: none; /* Hidden by default*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* styling the cross option to exit modal */
+.exit_modal{
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* styling of modal content */
+.modal_content{
+    background-image: url(background.jpg);
+    border: 2px solid wheat;
+    /* text-align: center; */
+    color: wheat;
+    width: 600px;
+    height: 700px;
+    min-width: 600px;
+    /* min-height: 700px; */
+    margin: 60px auto 60px auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* specifically making changes in menu1 appetizers modal */
+#menu1-form{
+    height: 1000px;
+}
+
+/* specifically making changes in deals modal */
+#Deals-form{
+    width: 1000px;
+    height: 3500px;
+}
+
+/* specifically making changes in sign in modal */
+#sign-in-form{
+    height:550px;
+}
+
+/* styling careers form */
+#careers-form{
+    height: 1000px;
+}
+
+#contact-us-form{
+    height: 800px;
+}
+
+#cv{
+    margin: 5px 0 22px 10px;
+}
+
+#cart-form{
+    height: auto;
+}
+
+/* setting up the styles f only text of form i.e labels/paragraphs */
+.formText{
+    margin-left: 14px;
+}
+
+/* styling input options */
+input[type="text"] , input[type="password"]{
+    width: 540px;
+    padding: 15px;
+    margin: 5px 0 22px 10px;
+    display: inline-block;
+    border-radius: 5px 5px 5px 5px;
+    background: rgb(225, 238, 238);
+    
+}
+
+/* styling on focus options */
+input[type=text]:focus, input[type=password]:focus{
+    background-color: white;
+    box-shadow: 5px 5px 15px #181717;
+    border-color: black;
+
+}
+
+/* styling on button hover */
+button:hover {
+    opacity:0.71;
+}
+
+/* cancel buttons in modals style */
+.cancelbtn {
+    
+    width: 200px;
+    padding: 14px 20px;
+    background-color: #f44336;
+    display: block;
+    margin: 2px auto 2px auto;
+    border: 0em;
+    font-family: 'PG_Roof';
+    color:rgb(250, 252, 252);
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+/* styling all submit buttons */
+.submitbtn{
+    width: 200px;
+    padding: 14px 20px;
+    background-color: transparent;
+    display: block;
+    margin: 10px auto 10px auto;
+    border: 0em;
+    font-family: 'PG_Roof';
+    color:rgb(250, 252, 252);
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+/* footer css */
+.footer{
+    
+    padding: 0px;
+    margin: 0px;
+    background: -webkit-gradient(linear, left top,left bottom, from(#0a0a0a), to(#343636));
+}
+
+/* styling the options in the footer */
+.footer li,.footer-content a{
+    font-family: 'PG_Roof';
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(250, 252, 252);
+    margin: 20px 30px;
+    font-size: 20px;
+    font-weight:bold;
+    text-shadow: 7px 7px 5px black;
+    cursor: pointer;
+
+}
+
+/* stuling footer images i.e making them circles */
+.footer-images{
+    padding: 10px 10px 10px 10px;
+    width: 70px;
+    height: 70px;
+    margin: 20px 5px 10px 5px;
+    border-radius: 50% 50% 50% 50%;
+    cursor: pointer;
+    
+}
+
+/* styling image container in footer  */
+.footer-image-container{
+    margin: 5px 450px 5px 450px; 
+    min-width: 500px;
+    
+}
+
+/* setting up the list styles */
+.footer-content ul{
+    margin: 5px 310px 5px 350px;
+    min-width: 700px;
+}
+
+/* styling of footer content */
+.footer-content{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* styling of non-circled images */
+.deal-images{
+    width: 900px;
+    height: 300px;
+    margin: 40px auto 10px auto;
+    display: block;
+}
+
+/* styling of labels of non-circled images in deals */
+.itemlabels-deals{
+    font-family: 'PG_ROOF_Small';
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 25px;
+    margin: 40px auto;
+}
+
+/* setting the marin of the circled images in deals */
+#circle-image-container{
+    margin: 50px 130px 50px 130px;
+}
+
+/* labeling of circle images in deals */
+ .itemlabels-deals-circle{
+    font-family: 'PG_ROOF_Small';
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 25px;
+    /* display: inline-block; */
+    width: 400px;
+    vertical-align: top;
+}
+
+/* styling of add to cart button */
+.add-to-cart{
+    display: block;
+    margin: 20px auto 20px auto;
+    font-family: 'PG_ROOF_Small';
+    color:red;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 30px;
+    background: white;
+    border: 0px;
+    box-shadow: 5px 5px 15px #181717;
+
+}
+
+/* styling of about us part */
+#about-us
+{
+    margin: 150px 60px 100px 60px;
+    padding: 40px 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    background-image: url('Red Smoke on Black Background-preview.jpg');
+}
+
+/* setting of evey heading on the site */
+.headings{
+    font-family: 'PG_Roof';
+    color:rgb(250, 252, 252);
+    font-weight:bold;
+    font-size : 40px;
+    text-align: center;
+    min-width: 500px;
+    min-height: 30px;
+    text-shadow: 10px 10px 5px black;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* styling of the iframe */
+iframe{
+    margin: 20px 80px 80px 80px;
+    width: 1200px;
+    height: 450px;
+    border: 0px;
+    text-align: center;
+    box-shadow: 5px 5px 15px #181717;
+}
+
+/* removing all the decorations of links */
+.footer-content a{
+  text-decoration: none;
+}
+
+/* makinhg menu option drop down */
+ .drop-down {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* not displaying the list until it is not hovered */
+  .menu-items{               
+      display: none;
+      position: absolute;
+      background-color: gainsboro;
+      min-width: 160px;
+      box-shadow: 5px 5px 15px #181717;
+      z-index: 1;
+      width: 290px;
+      
+  }
+  
+  .menu-items a{
+      text-decoration: none;
+      color: #0a0a0a;
+  }
+  /* setting the fonts and colors of the menu items */
+  .menu-items li, .menu-items{
+      
+      font-family: 'Courier New', Courier, monospace;
+      width: 290px;
+      margin: 8px 5px;
+      color: #0a0a0a;
+      text-shadow: none;
+  }
+/* list items will be underlined when it is hovered */
+  .menu-items a:hover {
+      text-decoration: underline;
+      color: red;
+  }
+
+  /* display list of menu itms when hovered */
+  .drop-down:hover .menu-items {display: block;}
+
+ .careers-select-options{
+    margin: 5px 0 22px 10px;
+    padding: 15px;
+    height: 50px;
+    width: 573px;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+    color: #0a0a0a;
+  }
+ 
+  .form-control-textarea{
+      height:100px;
+      width:570px;
+      margin: 5px 0 22px 10px;
+  }
+
+ #menu-heading{
+    text-align:center;
+    font-weight:bold;
+    font-size:70px;
+    font-family:'PG_Roof' ;
+    color: aliceblue;
+    text-shadow: 7px 7px 5px black;
+ }
+.menu
+ {
+     text-align:center;
+     font-weight:bold;
+     font-size:50px;
+     font-family:'PG_Roof' ;
+     color: aliceblue;
+ }
+ 
+
+ .product
+ {
+  /* background-image: url() */
+  display : flex;
+  flex-wrap: wrap;
+ }
+ .menu-container .product-card
+ {
+     /* flex:1;
+     flex-basis: 16%; */
+     flex:1 16%;
+     padding:2%;
+     background-color:white;
+     border: 0px;
+    box-shadow: 5px 5px 15px #181717;
+ }
+
+ .product-image-div .product-image
+ {
+     width:150px;
+     height: 150px;
+ }
+
+ .product-info-name
+ {
+     width: 200px;
+     height: 80px;
+     /* text-align: center; */
+     font-weight:bold;
+     font-size:30px;
+     font-family:'PG_Roof' ;
+     color: red;
+ }
+ 
+.deals-container .product-info-name{
+    width: 600px;
+    margin: 2px auto 2px auto;
+    text-align: center;
+    color: white;
+}
+
+.deal-images-circle
+{
+    display: block;
+    margin: 60px auto 40px auto;
+}
+ 
+ .product-info 
+ {
+   text-align: center;
+ }
+ @media(max-width:920px)
+ {
+     .product-card
+     {
+         flex:1 21%;
+     }
+ }
+  
+
+ .cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: white;
+    font-family: 'PG_Roof';
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'PG_Roof';
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: white;
+    font-family: 'PG_Roof';
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+    font-family: 'PG_Roof';
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: black;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-right: 20px;
+    font-family: 'PG_Roof';
+}
+
+.cart-total-price {
+    color: white;
+    font-size: 1.1em;
+    font-family: 'PG_Roof';
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+    font-family: 'PG_Roof';
+}
