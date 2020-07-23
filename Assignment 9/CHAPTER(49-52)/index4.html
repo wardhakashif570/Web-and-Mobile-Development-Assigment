@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<style>
+	#table {
+		border: 2px solid;
+		width: 545px;
+		text-align: center;
+	}
+
+	input,
+	#add {
+		margin-bottom: 20px
+	}
+	td{
+		padding-bottom: 5px;
+	}
+
+</style>
+
+<body>
+	<b>Name:</b>
+	<input type="text" id="name-field" name="name-field" placeholder="Name">
+	<br>
+	<b>Age:</b>
+	<input type="number" id="age-field" name="age-field" placeholder="Age">
+	<br>
+	<b>Class:</b>
+	<input type="number" id="class-field" name="class-field" placeholder="Class">
+	<br>
+	<button id="add" onclick="addStudent();">Add Student</button>
+	<table id="table">
+
+	</table>
+	<script>
+		var students = [];
+		function addStudent() {
+			// alert('aa')
+			var name = document.getElementById('name-field').value;
+			name = name.slice(0,1).toUpperCase() + name.slice(1).toLowerCase();
+			var age = document.getElementById('age-field').value;
+			var classs = document.getElementById('class-field').value;
+
+			if (!(name && age && classs)) {
+				alert('All Fields Required !!!')
+			} else {
+				students.push({ name: name, age: age, class: classs })
+				printStudents()
+			}
+			// after submit fields empty
+			var name = document.getElementById('name-field').value = '';
+			var age = document.getElementById('age-field').value = '';
+			var classs = document.getElementById('class-field').value = '';
+		}
+		function remove(index) {
+			students.splice(index, 1)
+			printStudents();
+		}
+
+		function printStudents() {
+			if (students.length) {
+				document.getElementById('table').innerHTML = `
+			<tr>
+			<th>S.NO</th>
+			<th>Name </th>
+			<th>Age</th>
+			<th>Class</th>
+		</tr>
+			`
+
+				students.map((value, index) => {
+					document.getElementById('table').innerHTML += `<tr>
+			<td >${(index + 1)}</td>
+			<td>${value.name}</td>
+			<td>${value.age}</td>
+			<td>${value.class}</td>
+			<td><button onclick='remove(${index})'>delete</button></td>
+
+		</tr>`
+				})
+			} else {
+				document.getElementById('table').innerHTML = `
+			<tr>
+			<th>S.NO</th>
+			<th>Name </th>
+			<th>Age</th>
+			<th>Class</th>
+		</tr>
+			`
+			}
+		}
+		printStudents()
+
+	</script>
+</body>
+
+</html>

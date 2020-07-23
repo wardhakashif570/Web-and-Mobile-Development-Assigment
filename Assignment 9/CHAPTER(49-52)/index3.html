@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+    <style>
+     
+
+
+    </style>
+</head>
+<body>
+    
+        <form action="#" method="GET"> <fieldset>
+                <legend>SIGN UP</legend>
+                <table>
+                  
+                        <tr>
+                            
+                                    <td>State</td> &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <td><input type="text" name="State" required id="w"/></td>
+                                    <td>   <p id="h"></p></td> 
+                                    
+                                
+                
+                            </tr>  
+                            <tr>
+                                <td>User Name</td> &nbsp; &nbsp; &nbsp; &nbsp;
+                                <td><input type="text" name="username" required id="a"/>
+                                </td>
+                                <td>   <p id="f"></p></td> 
+                            
+                        </tr>
+                        <tr>
+                    
+                                <td>Password</td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                <td><input type="password" name="password" required id="r"/>
+                                </td>
+                                <td>   <p id="i"></p></td> 
+                            </tr>
+                            <tr>
+                                <td>EMAIL</td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                <td><input type="email" name="email"   required  id="d"/>
+                                </td>
+                                <td>   <p id="an"></p></td> 
+                            </tr>
+                            <tr>
+                                <td>MOBILE</td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                <td><input type="number" name="number"   required id="e"/>
+                                </td>
+                                <td>   <p id="z"></p></td> 
+                            </tr>
+                            <tr>
+                                
+                                <td><button onClick="display();">SUBMIT</button></td>
+                            </tr>
+                        </table>
+                        </fieldset>
+
+                 
+        </form>
+        <script>
+            function display()
+            {
+             var a=document.getElementById("w").value;
+             document.getElementById("h").innerHTML=a;
+             var b=document.getElementById("a").value;
+             document.getElementById("f").innerHTML=b;
+             
+             var c=document.getElementById("r").value;
+             document.getElementById("i").innerHTML=c;
+             
+             var d=document.getElementById("d").value;
+             document.getElementById("an").innerHTML=d;
+            
+             var e=document.getElementById("e").value;
+             document.getElementById("z").innerHTML=a;
+        
+            }
+           </script>
+    </body>
+</html>
